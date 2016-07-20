@@ -1,3 +1,1 @@
 isatools
-pandas
-networkx
