@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys
 import os
 import zipfile
@@ -9,6 +11,9 @@ try:
     from isatools import isatab
 except ImportError as e:
     raise RuntimeError("Could not import isatools package")
+if not os.path.exists(isa_archive):
+    print("File path to ISArchive ZIP file \"{}\" does not exist".format(isa_archive))
+    sys.exit(0)
 report = None
 with zipfile.ZipFile(isa_archive, 'r') as z:
     z.extractall('./tmp')

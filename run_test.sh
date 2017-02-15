@@ -9,7 +9,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/ISA-tools/isa-api/
 wget --no-check-certificate https://raw.githubusercontent.com/ISA-tools/isa-api/master/tests/data/tab/BII-I-1/a_proteome.txt
 zip -r BII-I-1.zip i_investigation.txt s_BII-S-1.txt s_BII-S-2.txt a_metabolome.txt a_microarray.txt a_proteome.txt
 
-python3 run_validator.py BII-I-1.zip
+run_validator.py BII-I-1.zip
 
 # check that files were created
 if ! [ -e "/report.json" ]; then
