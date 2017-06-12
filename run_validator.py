@@ -22,7 +22,7 @@ with zipfile.ZipFile(isa_archive, 'r') as z:
     if len(i_files) == 1:
         print("Loading: " + os.path.join('tmp', i_files[0].filename))
         with open(os.path.join('tmp', i_files[0].filename)) as in_fp:
-            json_report = isatab.validate2(in_fp)
+            json_report = isatab.validate(in_fp)
             if json_report is not None:
                  with open("report.json", "w") as out_fp:
                      json.dump(json_report, out_fp)
