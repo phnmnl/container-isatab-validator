@@ -65,10 +65,10 @@ The current set of validation rules that have been implemented are listed in thi
 
 <!-- @@@END_RST@@@ -->
   </help>
+
   <citations>
     <citation type="doi">10.5281/zenodo.163640</citation>
     <citation type="doi">10.1038/ng.1054</citation>
   </citations>
-
 
 </tool>
