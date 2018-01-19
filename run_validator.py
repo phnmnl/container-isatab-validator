@@ -13,8 +13,7 @@ if not os.path.exists(isa_path):
     print('File path to ISA files \'{}\' does not exist'.format(isa_path))
     sys.exit(0)
 report = None
-i_files = glob.glob('i_*.txt')
-print(i_files)
+i_files = glob.glob(os.path.join(isa_path, 'i_*.txt'))
 if len(i_files) == 1:
     i_file_name = next(iter(i_files))
     with open(i_file_name) as in_fp:
