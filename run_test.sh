@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get update && apt-get install -y --no-install-recommends wget zip
+apk update && apk add ca-certificates && update-ca-certificates && apk add openssl
 wget --no-check-certificate https://raw.githubusercontent.com/ISA-tools/ISAdatasets/master/tab/BII-I-1/i_investigation.txt
 wget --no-check-certificate https://raw.githubusercontent.com/ISA-tools/ISAdatasets/master/tab/BII-I-1/s_BII-S-1.txt
 wget --no-check-certificate https://raw.githubusercontent.com/ISA-tools/ISAdatasets/master/tab/BII-I-1/s_BII-S-2.txt
