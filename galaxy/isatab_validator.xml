@@ -9,7 +9,7 @@
       <param name="isa_file" type="data" format="isa" label="ISA-Tab" optional="false" help="The input must contain the i_*.txt, s_*.txt and a_*.txt files expected by ISA-Tab." />
   </inputs>
   <outputs>
-    <data format="json" name="output" from_work_dir="report.json" label="Validation report in JSON format." />
+      <data format="json" name="output" from_work_dir="report.json" label="Validation report in JSON format." />
   </outputs>
 
   <help>

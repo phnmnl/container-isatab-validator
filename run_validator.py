@@ -21,4 +21,5 @@ if len(i_files) == 1:
         json_report = isatab.validate(in_fp)
         if json_report is not None:
             with open('report.json', 'w') as out_fp:
-                json.dump(json_report, out_fp)
+                json.dump(json_report, out_fp, indent=4)
+                print(json.dumps(json_report, indent=4))
