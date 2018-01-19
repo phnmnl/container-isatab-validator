@@ -3,22 +3,21 @@ import glob
 import json
 import os
 import sys
-import shutil
 
 isa_path = sys.argv[1]
 try:
     from isatools import isatab
 except ImportError as e:
-    raise RuntimeError("Could not import isatools package")
+    raise RuntimeError('Could not import isatools.isatab package')
 if not os.path.exists(isa_path):
-    print("File path to ISA files \"{}\" does not exist".format(isa_path))
+    print('File path to ISA files \'{}\' does not exist'.format(isa_path))
     sys.exit(0)
 report = None
 i_files = glob.glob('i_*.txt')
 if len(i_files) == 1:
-    print("Loading: " + os.path.join('tmp', i_files[0].filename))
-    with open(os.path.join('tmp', i_files[0].filename)) as in_fp:
+    print('Loading: ' + os.path.join('tmp', next(iter(i_files))))
+    with open(os.path.join('tmp', next(iter(i_files)))) as in_fp:
         json_report = isatab.validate(in_fp)
         if json_report is not None:
-             with open("report.json", "w") as out_fp:
+             with open('report.json', 'w') as out_fp:
                  json.dump(json_report, out_fp)
