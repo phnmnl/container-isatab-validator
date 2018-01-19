@@ -15,9 +15,10 @@ if not os.path.exists(isa_path):
 report = None
 i_files = glob.glob('i_*.txt')
 if len(i_files) == 1:
-    print('Loading: ' + os.path.join('tmp', next(iter(i_files))))
-    with open(os.path.join('tmp', next(iter(i_files)))) as in_fp:
+    i_file_name = next(iter(i_files))
+    print('Loading: {}'.format(i_file_name))
+    with open(i_file_name) as in_fp:
         json_report = isatab.validate(in_fp)
         if json_report is not None:
-             with open('report.json', 'w') as out_fp:
-                 json.dump(json_report, out_fp)
+            with open('report.json', 'w') as out_fp:
+                json.dump(json_report, out_fp)
