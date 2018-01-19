@@ -1,10 +1,10 @@
-FROM isatools/isatools:3.6-slim-stretch-0.9.4
+FROM isatools/isatools:3.6-alpine-0.9.4
 
 MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
 
 LABEL Description="Validate an ISA tab archive (zip)"
 LABEL software.version="0.9.4"
-LABEL version="0.3"
+LABEL version="0.4"
 LABEL software="isatab-validator"
 
 
