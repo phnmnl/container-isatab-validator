@@ -1,7 +1,7 @@
 FROM isatools/isatools:3.6-alpine-0.9.5
 
 LABEL maintainer="PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )"
-LABEL description="Validate an ISA tab archive (zip)"
+LABEL description="Validate an ISA-Tab"
 LABEL software.version="0.9.5"
 LABEL version="0.6"
 LABEL software="isatab-validator"
