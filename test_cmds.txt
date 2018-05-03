@@ -1,2 +1,2 @@
 which run_test.sh
-which run_validator.py
+which isatab_validator.py
