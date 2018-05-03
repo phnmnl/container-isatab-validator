@@ -17,7 +17,7 @@ ENV PATH=$PATH:/files/galaxy
 ADD run_test.sh /usr/local/bin/run_test.sh
 RUN chmod +x /usr/local/bin/run_test.sh
 
-RUN cp /files/galaxy/tools/validators/run_validator.py /usr/local/bin/run_validator.py
-RUN chmod a+x /usr/local/bin/run_validator.py
+RUN cp /files/galaxy/tools/validators/isatab_validator.py /usr/local/bin/isatab_validator.py
+RUN chmod a+x /usr/local/bin/isatab_validator.py
 
-ENTRYPOINT ["run_validator.py"]
+ENTRYPOINT ["isatab_validator.py"]
