@@ -1,7 +1,7 @@
 ![Logo](isa-api_logo.png)
 
 # ISA-Tab Validator
-Version: 0.9.5
+Version: 0.10.0
 
 ## Short Description
 

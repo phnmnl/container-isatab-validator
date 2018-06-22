@@ -2,8 +2,8 @@ FROM isatools/isatools:3.6-alpine-0.9.5
 
 LABEL maintainer="PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )"
 LABEL description="Validate an ISA-Tab"
-LABEL software.version="0.9.5"
-LABEL version="0.7"
+LABEL software.version="0.10.0"
+LABEL version="0.7.0"
 LABEL software="isatab-validator"
 
 RUN apk add --no-cache --virtual git-deps git openssh \
